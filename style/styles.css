@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  width: 900px;
+  height: 500px;
+  margin-top: 5%;
+  margin: 0, auto;
+  display: flex;
+  border-radius: 10px;
+  background-color: aquamarine;
+  color: white;
+}
+
+.column {
+  width: 100%;
+}
+
+.column.one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column.two {
+  background-color: hsl(184, 100%, 22%);
+  display: flex;
+  flex-direction: column;
+}
+
+.column.three {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 15px;
+  font-family: 'Lexend Deca', serif;
+  font-weight: 100;
+  margin: 30;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', serif;
+}
+
+.learnButton.one {
+  width: 70%;
+  height: 50px;
+  background-color: white;
+  color: hsl(31, 77%, 52%);
+  font-family: 'Lexend Deca', 'serif';
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+
+}
+
+.learnButton.two {
+  width: 70%;
+  height: 50px;
+  background-color: white;
+  color: hsl(184, 100%, 22%);
+  font-family: 'Lexend Deca', 'serif';
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+
+.learnButton.three {
+  width: 70%;
+  height: 50px;
+  background-color: white;
+  color: hsl(179, 100%, 13%);
+  font-family: 'Lexend Deca', 'serif';
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.container {
+  padding: 60px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+}
