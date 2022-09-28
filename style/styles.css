@@ -10,15 +10,19 @@ body {
   flex-direction: column;
 }
 
+
+
+
 main {
-  width: 900px;
-  height: 500px;
-  margin-top: 5%;
-  margin: 0, auto;
+  width: 800px;
+  height: 450px;
+
+  margin: 0 auto;
   display: flex;
   border-radius: 10px;
-  background-color: aquamarine;
+
   color: white;
+  margin-top: 5%;
 }
 
 .column {
@@ -56,11 +60,13 @@ main {
 
 h2 {
   font-family: 'Big Shoulders Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 .learnButton.one {
   width: 70%;
-  height: 50px;
+  height: 40px;
   background-color: white;
   color: hsl(31, 77%, 52%);
   font-family: 'Lexend Deca', 'serif';
@@ -70,12 +76,13 @@ h2 {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
-
+  font-size: 13px;
+  border: 2px solid transparent
 }
 
 .learnButton.two {
   width: 70%;
-  height: 50px;
+  height: 40px;
   background-color: white;
   color: hsl(184, 100%, 22%);
   font-family: 'Lexend Deca', 'serif';
@@ -85,12 +92,14 @@ h2 {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
+  font-size: 13px;
+  border: 2px solid transparent
 }
 
 
 .learnButton.three {
   width: 70%;
-  height: 50px;
+  height: 40px;
   background-color: white;
   color: hsl(179, 100%, 13%);
   font-family: 'Lexend Deca', 'serif';
@@ -100,13 +109,79 @@ h2 {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
+  font-size: 13px;
+  border: 2px solid transparent;
 }
 
+.learnButton.one:hover, 
+.learnButton.two:hover, 
+.learnButton.three:hover {
+  border:  2px solid white ;
+
+
+  color: white;
+  cursor: pointer;
+}
+
+.learnButton.one:hover {
+  background:hsl(31, 77%, 52%);
+}
+
+.learnButton.two:hover {
+  background: hsl(184, 100%, 22%);
+}
+
+.learnButton.three:hover {
+  background: hsl(179, 100%, 13%);
+}
+
+
 .container {
-  padding: 60px;
+  padding: 40px;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   height: 100%;
   
 }
+
+@media only screen and (max-width: 600px) {
+  main {
+    display: flex;
+    width: 351px;
+    height: 1400px;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-bottom: 40%;
+  }
+  
+
+  .column {
+    width: 100%;
+    height: 33%;
+  }
+
+  .column.one {
+  border-radius: 10px 10px 0 0px;
+  }
+
+  .column.three {
+    border-radius: 0 0 10px 10px;
+    }
+
+  .text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  .learnButton.one, 
+  .learnButton.two, 
+  .learnButton.three {
+    height: 50px;
+    font-size: 16px;
+  }
+  .attribution {
+    text-align: center;
+  }
+} 
